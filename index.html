@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="image/logo-icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyon Webflow</title>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.9.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./slider.css">
+
+<!-- Font family -->
+<style>
+    .font-manrope{
+        font-family: "Manrope", sans-serif;
+    }
+</style>
+<style>
+    .contain {
+        position: relative;
+       
+    }
+    .overlay-button {
+        position: absolute;
+        top: 90%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        padding: 10px 10px;
+        background-color:#fff ;
+        color:  #333;
+        border: none;
+        cursor: pointer;
+    }
+    .button-image {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px; /* Adjust spacing between image and text */
+    }
+</style>
+</head>
+<body class="font-manrope">
+    <Header class="  ">
+        <div class="  flex justify-center  items-center mt-10">
+            <div class="fixed z-10   ">
+                <nav class=" lg:w-[850px] ">
+                    <div class="navbar bg-white gap-12 shadow-2xl border border-gray-200 shadow-gray-300  rounded-full">
+                        <div class=" ml-5">
+                         <img src="image/logo-icon.png" class=" w-8 h-8" alt="">
+                          <a class=" text-xl font-extrabold">Lyon</a>
+                        </div>
+                        <div class="navbar-center ">
+                            <div class="hidden lg:flex ">
+                                <ul class="menu menu-horizontal px-1 font-semibold text-base uppercase">
+                                    <li class="rounded-full "><a>Home</a></li>
+                                    <li><a>Features</a></li>
+                                    <li><a>About</a></li>
+                                    <li><details>
+                                        <summary class="">Pages</summary>
+                                        <div class=" flex  justify-center">
+                                            <footer class="footer p-6 bg-black text-white absolute right-0 top-16  w-[650px] flex items-center gap-10 rounded-2xl uppercase justify-center max-w-auto">
+                                                <nav>
+                                                  <h6 class="footer-title">Pages</h6> 
+                                                  <a class="link link-hover">MAIN / DEMO</a>
+                                                  <a class="link link-hover">HOME</a>
+                                                  <a class="link link-hover">FEATURES</a>
+                                                  <a class="link link-hover">INSIGHTS</a>
+                                                </nav> 
+                                                <nav>
+                                                  <h6 class="footer-title">SHOP</h6> 
+                                                  <a class="link link-hover">PRIVACY</a>
+                                                  <a class="link link-hover">Contact</a>
+                                                  <a class="link link-hover">OTHER PAGES</a>
+                                                  <a class="link link-hover">PRODUCT DETAILS</a>
+                                                </nav> 
+                                                <nav>
+                                                  <h6 class="footer-title">POST DETAIL</h6> 
+                                                  <a class="link link-hover">SHOP CATEGORY</a>
+                                                  <a class="link link-hover">BLOG CATEGORY</a>
+                                                  <a class="link link-hover">CHECKOUT</a>
+                                                  <a class="link link-hover">PASSWORD</a>
+                                                </nav>
+                                            </footer>
+                                        </div>
+                                     
+                                      </details>
+                                    
+                                    </li>
+                                    <li><a>Shop</a></li>
+                                    <li class="rounded-full bg-gradient-to-t from-[#ee5d1f] to-[#f03489] text-white "><a>Sales</a></li>
+                                  </ul>
+        
+                            </div>
+                        </div>
+                        <div class="">
+                          <button class=" hover:rounded-full gap-2  inline-flex hover:bg-slate-300 p-2  text-xl text-white"> <img src="image/shopping.png" class="w-6 h-6 " alt="">
+                            <div class="badge text-white bg-black">0</div></button>
+                          <details class="dropdown lg:hidden ">
+                            <summary class="btn btn-ghost btn-circle"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg></summary>
+                            <div class=" z-2  gap-0  bg-[#fdfdfd]  absolute right-0 top-16   w-[330px]  flex overflow-hidden flex-col uppercase  rounded-lg h-auto   font-semibold text-base menu menu-sm dropdown-content">
+                             
+                                <li class="rounded-full "><a>Home</a></li>
+                                    <li><a>Features</a></li>
+                                    <li><a>About</a></li>
+                                    <li><details>
+                                        <summary class="">Pages</summary>
+                                        <div class=" flex  justify-center">
+                                            <footer class="footer p-6 bg-black text-white absolute right-0 top-16  w-[650px] flex items-center uppercase justify-center max-w-auto">
+                                                <nav>
+                                                  <h6 class="footer-title">Pages</h6> 
+                                                  <a class="link link-hover">Branding</a>
+                                                  <a class="link link-hover">Design</a>
+                                                  <a class="link link-hover">Marketing</a>
+                                                  <a class="link link-hover">Advertisement</a>
+                                                </nav> 
+                                                <nav>
+                                                  <h6 class="footer-title">Company</h6> 
+                                                  <a class="link link-hover">About us</a>
+                                                  <a class="link link-hover">Contact</a>
+                                                  <a class="link link-hover">Jobs</a>
+                                                  <a class="link link-hover">Press kit</a>
+                                                </nav> 
+                                                <nav>
+                                                  <h6 class="footer-title">Legal</h6> 
+                                                  <a class="link link-hover">Terms of use</a>
+                                                  <a class="link link-hover">Privacy policy</a>
+                                                  <a class="link link-hover">Cookie policy</a>
+                                                </nav>
+                                            </footer>
+                                        </div>
+                                      </details>
+                                    </li>
+                                    <li class="rounded-full w-16"><a>Shop</a></li>
+                                    <li class="rounded-full w-16 bg-gradient-to-t from-[#ee5d1f] to-[#f03489] text-white "><a>Sales</a></li>
+                                
+                                </div>
+                          </details>
+                        </div>
+                      </div>
+                </nav>
+            </div>
+
+        </div>
+      <div class="animate">
+        <div class="flex shadow-2xl shadow-[#f8d0d0] mt-10 items-center justify-center w-full h-[80vh] bg-gradient-to-t from-[#f9f9f9] to-[#ffffff]  ">
+            <div class="flex flex-col items-center  text-white space-y-8">
+                <h1 class="lg:text-8xl md:text-5xl text-3xl  font-bold  text-[#2b2b2b] text-center  ">
+                    Resource <span class="bg-gradient-to-r from-[#ee5d1f] to-[#f03489]
+                       inline-block text-transparent bg-clip-text p-3">sharing</span> <br /> within the company
+                </h1>
+                <p class="max-w-[58%] mx-auto md:text-2xl text-lg text-center text-[#2b2b2b]">
+                    Lyon keeps your team’s work on-brand, on message, and on time. Innovative features make work feel effortless.
+                </p>
+                <div class="flex flex-wrap gap-10 items-center pt-4">
+                    <button class="flex items-center gap-4 px-8 py-3 bg-gradient-to-t from-[#ee5d1f] to-[#f03489] text-white md:text-xl text-lg font-medium rounded-full">
+                        Talk to Sales
+                    </button>
+                    <button class="flex items-center gap-4 px-8 py-3 bg-black text-white md:text-xl text-lg font-medium rounded-full">
+                      Careers
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="slider pt-16 shadow-2xl shadow-[#f8d0d0] bg-gradient-to-t from-[#ffdede] via-[#db4444]  to-[#fdf5f5]">
+            <div class="slide-track">
+                <!-- 1st 5 slide image -->
+                <div class="slide">
+                    <img src="image/pexels-anna-shvets-3987020.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/pexels-mizuno-k-12899188.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/pexels-ann-poan-5797903.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/pexels-rfstudio-3810792.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/pexels-mizuno-k-12899188.jpg" alt="">
+                </div>
+
+                 <!-- 1st 5 slide image -->
+                 <div class="slide">
+                    <img src="image/pexels-anna-shvets-3987020.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/pexels-mizuno-k-12899188.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/pexels-ann-poan-5797903.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/pexels-rfstudio-3810792.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/pexels-mizuno-k-12899188.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+     
+      
+    </Header>
+    <main>
+        <!-- We ar best section -->
+      <section class="md:container md:mx-auto my-28 animate ">
+        <h3 class=" lg:text-6xl md:text-5xl text-2xl font-bold text-center mt-6 ">We are based on earth </h3>
+        <p class="text-center md:text-2xl text-lg mt-6 font-normal mb-12 p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.</p>
+        <div class="grid grid-cols-1 md:flex md:flex-row   items-center">
+           
+            <div class="md:w-[42%] p-4">
+                <img src="image/adolfo-felix-PG8NyM_Mcts-unsplash.jpg" alt="Image 2" class="md:max-w-full md:h-[450px] rounded-2xl">
+            </div>
+            <div class="md:w-[58%] p-4">
+                <div class="contain">
+                    <img src="image/pexels-pixabay-302769office.jpg" id="main-image" alt="Image 1" class="md:w-full md:h-[450px] rounded-2xl">
+                    <button id="change-btn" class="overlay-button rounded-xl text-xl" onclick="changeImageAndButton()">View in map</button>
+                </div>
+
+                </div>
+               
+            </div>
+        </div>
+        <div class="p-3 md:ml-1">
+            <h2 class="text-2xl font-medium">Our offices in NYC</h2>
+        </div>
+        <div class="grid grid-cols-1 md:flex md:flex-row   items-center">
+            
+            <div class="md:w-[58%] p-4">
+                <div class="contain">
+                    <img src="image/pexels-huseyn-kamaladdin-667838.jpg" id="main-image2" alt="Image 1" class="md:w-full md:h-[450px] rounded-2xl">
+                    <button id="change-btn2" class="overlay-button rounded-xl text-xl inline-flex gap-2 justify-around
+                    " onclick="changeImage()"><img id="btn-img" src="image/map-regular.svg" class=" button-image w-8 h-8" alt="">
+                        View in map</button>
+                </div>
+              
+            </div>
+            <div class="md:w-[42%] p-4">
+                <img src="image/pexels-fox-1595385.jpg" alt="Image 2" class="md:max-w-full md:h-[450px] rounded-2xl">
+            </div>
+           
+        </div>
+        <div class="p-3 md:ml-1">
+            <h2 class="text-2xl font-medium">Our offices in NYC</h2>
+        </div>
+      </section>
+      <section class=" bg-slate-100">
+        <div class="md:container md:mx-auto p-4 animate" >
+            <div class=" md:w-[60%] mb-12 pt-16">
+            <h2 class="lg:text-6xl md:text-5xl text-2xl font-bold mb-6 ">What’s in it for <span class="bg-gradient-to-r from-[#ee5d1f] to-[#f03489]
+                inline-block text-transparent bg-clip-text p-3">you</span> </h2>
+            <p class=" md:text-2xl text-lg font-normal ">A job is not just the team you work with and the  tasks you do. It's also all the small things that  make you enjoy coming to work every day!</p>
+
+            </div>
+            <div class=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 my-12">
+                <div class=" flex items-center justify-center gap-6 bg-white rounded-2xl p-8">
+                    <img src="image/clockwhite.jpg" class="w-12 h-12" alt="">
+                    <h2 class=" text-xl font-semibold">Flexible working hours</h2>
+                </div>
+                <div class=" flex items-center justify-center gap-6 bg-white rounded-2xl p-8">
+                    <img src="image/bipcase-removebg-preview.png" class="w-12 h-12" alt="">
+                    <h2 class=" text-xl font-semibold">Work from home options</h2>
+                </div>
+                <div class=" flex items-center justify-center gap-6 bg-white rounded-2xl p-8">
+                    <img src="image/like.jpg" class="w-12 h-12" alt="">
+                    <h2 class=" text-xl font-semibold">Activity area (pool , games..)</h2>
+                </div>
+                <div class=" flex items-center justify-center gap-6 bg-white rounded-2xl p-8">
+                    <img src="image/person.png" class="w-12 h-12" alt="">
+                    <h2 class=" text-xl font-semibold">Personal development</h2>
+                </div>
+                <div class=" flex items-center justify-center gap-6 bg-white rounded-2xl p-8">
+                    <img src="image/heart.png" class="w-12 h-12" alt="">
+                    <h2 class=" text-xl font-semibold">Healthy snacks</h2>
+                </div>
+                <div class=" flex items-center justify-center gap-6 bg-white rounded-2xl p-8">
+                    <img src="image/mick.png" class="w-12 h-12" alt="">
+                    <h2 class=" text-xl font-semibold">In office party</h2>
+                </div>
+                <div class=" flex items-center justify-center gap-6 bg-white rounded-2xl p-8">
+                    <img src="image/dumble.png" class="w-12 h-12" alt="">
+                    <h2 class=" text-xl font-semibold">Wellness programme</h2>
+                </div>
+                <div class=" flex items-center justify-center gap-6 bg-white rounded-2xl p-8">
+                    <img src="image/paintplate.png" class="w-12 h-12" alt="">
+                    <h2 class=" text-xl font-semibold">Hands-on learning</h2>
+                </div>
+
+            </div>
+            <div>
+                <img src="image/pexels-zain-abba-17450186.jpg" class=" rounded-2xl w-full lg:h-[650px] " alt="">
+            </div>
+        </div>
+        <div class="md:container md:mx-auto flex lg:flex-row flex-col md:mt-24 mt-16 p-4 animate ">
+            <div class=" mb-12  flex-1">
+                <div class=" md:w-[70%]  ">
+                    <h2 class="lg:text-6xl md:text-5xl text-2xl font-bold mb-6 ">Job openings</h2>
+                <p class=" md:text-2xl text-lg font-normal">A job is not just the team you work with and the  tasks you do. It's also all the small things that  make you enjoy coming to work every day!</p>
+                </div>
+                </div>
+                <div class="grid grid-cols-1 flex-1 gap-6">
+                    <div class="rounded-xl bg-gradient-to-r from-[#ee5d1f] to-[#f03489] p-1">
+                        <div class="flex h-full w-full justify-between gap-6 bg-white rounded-xl py-10 px-8 back  ">
+                            <div>
+                                <h2 class=" text-4xl font-semibold ">Full-stack engineer </h2>
+                                <p class=" text-xl">In-house, Remote</p>
+                              </div>
+                                <img src="image/arrow-up-right-from-square-solid.svg" class="w-8 h-8" alt="">
+                    </div>
+
+                    </div>
+                  
+                    <div class="rounded-xl bg-gradient-to-r from-[#ee5d1f] to-[#f03489] p-1">
+                        <div class="flex h-full w-full justify-between gap-6 bg-white rounded-xl py-10 px-8  ">
+                            <div>
+                                <h2 class=" text-4xl font-semibold ">Product Designer </h2>
+                                <p class=" text-xl">In-house, Remote</p>
+                              </div>
+                                <img src="image/arrow-up-right-from-square-solid.svg" class="w-8 h-8" alt="">
+                    </div>
+
+                    </div>
+
+                </div>
+
+        </div>
+        <div class="md:container md:mx-auto bg-black rounded-2xl text-white flex md:flex-row flex-col md:mt-24 mt-16  animate ">
+            <div class=" mb-12  flex-1">
+                <div class=" lg:w-[50%] lg:px-24 lg:py-32 p-4 ">
+                    <h2 class="lg:text-6xl md:text-5xl text-2xl font-bold mb-6 ">See if Lyon is right for you</h2>
+                <p class=" md:text-2xl text-lg font-normal">In just 30 days, our finance mobile app offers unparalleled precision in identifying crucial market trends and opportunities.</p>
+                <div class=" flex gap-6 mt-10">
+                    <button class="flex items-center gap-4 px-8 py-3 bg-gradient-to-t from-[#ee5d1f] to-[#f03489] text-white md:text-xl text-lg font-medium rounded-full">
+                       iOS
+                    </button>
+                    <button class="flex items-center gap-4 px-8 py-3 bg-gradient-to-t from-[#ee5d1f] to-[#f03489] text-white md:text-xl text-lg font-medium rounded-full">
+                        Android
+                    </button>
+                </div>
+                </div>
+                </div>
+                <div class="">
+                    <img src="image/bg.png" class=" lg:w-full lg:h-full" alt="">
+                </div>
+
+        </div>
+    
+      </section>
+    </main>
+   
+    <footer class="flex flex-col animate">
+        <div class="flex flex-col items-start justify-around gap-6 bg-slate-100 md:p-10 p-4 py-10 md:flex-row md:gap-0 md:items-center">
+            <aside class="text-xl w-1/3">
+                <div class=" flex gap-3 mb-7">
+                    <img src="image/logo-icon.png" class=" w-12 h-12" alt="">
+                <a class=" text-4xl font-extrabold">Lyon</a>
+
+                </div>
+                
+           <h2 class="lg:text-6xl md:text-2xl text-2xl sm:w-[520px] w-full font-bold">Subscribe to the  newsletter</h2>
+           <div class="flex bg-white p-2 my-12 gap-3 justify-between rounded-full ">
+            <input type="text" class=" md:w-8 w-full flex-1 bg-white pl-2 text-base font-semibold rounded-l-lg outline-0" placeholder="Enter your email" id="">
+            <input type="button" value="Start Free trail" class="bg-gradient-to-t from-[#ee5d1f] to-[#f03489]   p-4 rounded-full  text-white font-semibold sm:block hidden  transition-colors">
+            <button class="bg-gradient-to-t from-[#ee5d1f] to-[#f03489]   p-4 rounded-full  text-white font-semibold block sm:hidden  transition-colors">
+                <img src="image/paper-plane-regular.svg" class="w-6 h-6" alt="">
+            </button>
+          </div>
+             <div class=" flex gap-6">
+                <img src="image/facebook.svg" class="w-8 h-8" alt="">
+                <img src="image/twitter.svg" class="w-8 h-8" alt="">
+                <img src="image/youtube.svg" class="w-8 h-8" alt="">
+                <img src="image/square-instagram.svg" class="w-8 h-8" alt="">
+
+             </div>
+            </aside>
+           
+                <nav class="text-xl">
+                    <ul class="space-y-3">
+                        <li>
+                            <a class="cursor-pointer font-bold">Product</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">Demo (Sales)</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">Home</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">Features</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">About</a>
+                        </li>
+                      
+                    </ul>
+                </nav>
+                <nav class="text-xl">
+                    <ul class="space-y-3">
+                        <li>
+                            <a class="cursor-pointer font-bold">Important</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">Download</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">Contact</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">Privacy</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">🌟 Templates</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="text-xl">
+                    <ul class="space-y-3">
+                        <li>
+                            <a class="cursor-pointer font-bold">Utility</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">Style Guide</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">Change Log</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">Licensing</a>
+                        </li>
+                        <li>
+                            <a class="cursor-pointer">Instructions</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            
+         
+        </div>
+       
+    </footer>
+
+      <footer class="footer px-10 py-4 justify-between flex flex-col md:flex-row border-t bg-slate-100 h-48 text-base border-base-300">
+       
+        <div>
+            <p>© 2024 - Made with ❤️ by Azwedo& Wedoflow </p>
+        </div>
+         <div>
+            <p>Powered by Webflow</p>
+         </div>
+          
+            
+        
+        
+        <!-- <nav class="md:place-self-center md:justify-self-end">
+            <p>Powered by Webflow</p>
+        </nav> -->
+      </footer>
+
+      <script>
+        function changeImageAndButton() {
+            var image = document.getElementById("main-image");
+            var button = document.getElementById("change-btn");
+    
+            if (image.src.endsWith("image/pexels-pixabay-302769office.jpg")) {
+                image.src = "image/firstOffice.jpg";
+                button.textContent = "View our office";
+                button.src="image/building-regular.svg"
+            } else {
+                image.src = "image/pexels-pixabay-302769office.jpg";
+                button.textContent = "View in map";
+                button.src="image/map-regular.svg"
+            }
+        }
+    </script>
+    <script>
+            function changeImage() {
+                var image = document.getElementById("main-image2");
+                var button = document.getElementById("change-btn2");
+                // var buttonImg = document.getElementById("btn-img");
+                // console.log(buttonImg)
+        
+                if (image.src.endsWith("image/pexels-huseyn-kamaladdin-667838.jpg")) {
+                    image.src = "image/firstOffice.jpg";
+                    button.textContent = "View our office";
+                    // buttonImg.src="image/building-regular.svg"
+                    document.getElementById("btn-img").src = "image/building-regular.svg";
+                } else {
+                    image.src = "image/pexels-huseyn-kamaladdin-667838.jpg";
+                    button.textContent = "View in map";
+                    // buttonImg.src="image/map-regular.svg"
+                document.getElementById("btn-img").src = "image/map-regular.svg";
+                 }
+            }
+        </script>
+
+    <script>
+        const observer = new IntersectionObserver((entries)=>{
+            entries.forEach((entry)=>{
+                if(entry.isIntersecting)
+                {
+                    entry.target.classList.add('show')
+                }
+                else{
+                    entry.target.classList.remove('show')
+                }
+            })
+        })
+        const hiddenElements=document.querySelectorAll('.animate');
+        hiddenElements.forEach( (el) => observer.observe(el));
+    </script>
+    
+</body>
+</html>
